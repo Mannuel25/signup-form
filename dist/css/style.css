@@ -64,6 +64,16 @@ a {
   padding: 1rem 1rem 1rem 3rem;
 }
 
+#container-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(109, 81, 185, 0.5);
+}
+
 #container-left .overlay {
   font-family: "Poppins", sans-serif;
   z-index: 100;
@@ -75,15 +85,6 @@ a {
 
 #container-left .overlay h2 {
   font-size: 3rem;
-}
-
-#container-left ::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 #container-left .overlay > * {
@@ -111,13 +112,20 @@ a {
   height: 100%;
 }
 
+#container-right .form-header {
+  font-family: "Poppins", sans-serif;
+}
+
 #container-right .form-header h1 {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 #container-right .form-header h3 {
   margin: 0.2rem 0 0.7rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #6c6e72;
 }
 
 #container-right .form-header p {
