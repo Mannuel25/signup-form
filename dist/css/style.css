@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Proxima";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Proxima"), url("/assets/font/proxima_nova_light.otf") format("truetype");
+}
+
+body {
+  background: #1d1e22;
+  color: #ffffff;
+  font-family: "Proxima", sans-serif;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  background: #422f75 url(/assets/images/black-3.jpg) no-repeat bottom center/cover;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.fade {
+  margin-left: 0.12rem;
+  color: #6c6e72;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.fade-2 {
+  text-decoration: underline;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  grid-auto-rows: minmax(600px, auto);
+  margin: 18px auto;
+  max-width: 1100px;
+  padding: 1rem;
+  border: 1px solid inherit;
+  border-radius: 10px;
+}
+
+#container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  position: relative;
+  padding: 1rem 1rem 1rem 3rem;
+}
+
+#container-left .overlay {
+  font-family: "Poppins", sans-serif;
+  z-index: 100;
+}
+
+#container-left .overlay h1 {
+  font-size: 1rem;
+}
+
+#container-left .overlay h2 {
+  font-size: 3rem;
+}
+
+#container-left ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#container-left .overlay > * {
+  z-index: 100;
+}
+
+#container-left img {
+  width: 100px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+#container-right {
+  padding: 1.5rem 2rem;
+  border-radius: 0 5px 5px 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background: #1d1e22;
+}
+
+#container-right .form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+#container-right .form-header h1 {
+  font-size: 1.5rem;
+}
+
+#container-right .form-header h3 {
+  margin: 0.2rem 0 0.7rem;
+  font-size: 1rem;
+}
+
+#container-right .form-header p {
+  color: #6c6e72;
+  margin-bottom: 1rem;
+}
+
+#container-right .form-group {
+  margin: 0.4rem 0;
+}
+
+#container-right .form-group label {
+  font-size: 0.9rem;
+}
+
+#container-right .form-group input {
+  font-family: "Proxima", sans-serif;
+  padding: 1rem;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 0.2rem 0;
+  transition: 0.3s ease-in-out;
+}
+
+#container-right .form-group :focus {
+  background: #25262b;
+  outline: none;
+  border: 1px solid #422f75;
+}
+
+#container-right .form-group input[type="text"],
+#container-right .form-group input[type="email"],
+#container-right .form-group input[type="tel"],
+#container-right .form-group input[type="submit"] {
+  width: 100%;
+}
+
+#container-right .form-group input[type="submit"] {
+  background: #422f75;
+  border: none;
+  cursor: pointer;
+}
+
+#container-right .form-group input[type="submit"]:hover {
+  background: #6d51b9;
+}
+
+#container-right .form-group .underline {
+  border: 1px solid #422f75;
+  margin: 0.5rem 2rem 1.5rem;
+}
+
+#container-right .form-group .socials {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.31rem;
+}
+
+#container-right .form-group .socials a {
+  display: inline-block;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 0.3rem 0.7rem;
+  margin: 0 0.4rem;
+  transition: 0.2s ease-in-out;
+}
+
+#container-right .form-group .socials a:hover {
+  background: #6d51b9;
+  border: 1px solid transparent;
+}
+
+#container-right .form-group .socials a:visited {
+  background: #6d51b9;
+  border: 1px solid transparent;
+}
+
+#container-right .form-group .socials img {
+  width: 20px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d9fe1688ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <title>EkeHub | SignUp</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="container-left">
+        <div class="overlay">
+          <img src="/assets/images/ekehub.png" alt="Ekehub logo" />
+          <h1>EkeHub</h1>
+          <h2>Developers and Designers collaborating</h2>
+        </div>
+      </div>
+
+      <div id="container-right">
+        <form action="thankyou.html" method="post" data-netlify="true">
+          <div class="form-container">
+            <div class="form-header">
+              <h1>EkeHub</h1>
+              <h3>
+                A learning community of Developers and Designers collaborating
+                and building <span class="fade-2">Opensource</span> Solutions
+              </h3>
+            </div>
+
+            <div class="form-group">
+              <label for="username">GitHub Username</label>
+              <input
+                type="text"
+                placeholder="Username"
+                id="username"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="GitHub_Email">GitHub Email</label
+              ><abbr
+                class="fade"
+                title="The email address associated with your GitHub account"
+                ><i class="far fa-question-circle"></i
+              ></abbr>
+              <input type="email" id="GitHub_Email" placeholder="Email" />
+            </div>
+
+            <div class="form-group">
+              <label for="Phone">
+                Phone <span class="fade">(Optional)</span>
+              </label>
+              <input type="tel" placeholder="Tel" id="Phone" />
+            </div>
+
+            <div class="form-group">
+              <label class="inline" for="t&c"
+                >I agree to be added to EkeHub community</label
+              >
+              <input class="fade" type="checkbox" id="t&c" required />
+            </div>
+
+            <div class="form-group">
+              <input type="submit" value="Submit" />
+            </div>
+
+            <div class="form-group">
+              <div class="socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+
+                <a href="https://twitter.com/evavic44"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+
+                <a href="https://eke.hashnode.dev/">
+                  <img src="./assets/images/hashnode.svg" alt="Hashnode Icon" />
+                </a>
+
+                <a href="https://chat.whatsapp.com/BMFVTksMg269GdgsviJzLm"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
