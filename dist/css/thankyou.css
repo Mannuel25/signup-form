@@ -58,7 +58,7 @@ body {
 }
 
 .container .container-right img {
-  width: calc(100% - 40px);
+  width: 100%;
 }
 
 .container .socials {
