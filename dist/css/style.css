@@ -78,26 +78,24 @@ a {
 
 #container-left .overlay {
   font-family: "Poppins", sans-serif;
+  line-height: 1.3;
   z-index: 100;
-}
-
-#container-left .overlay h1 {
-  font-size: 1rem;
 }
 
 #container-left .overlay h2 {
   font-size: 3rem;
+  margin: 1rem 0;
+}
+
+#container-left .overlay .logo {
+  width: 55px;
+  border: 1px solid #6c6e72;
+  padding: 0.2rem;
+  background-color: #ffffff;
 }
 
 #container-left .overlay > * {
   z-index: 100;
-}
-
-#container-left img {
-  width: 100px;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  padding: 1rem;
 }
 
 #container-right {
@@ -145,7 +143,7 @@ a {
 
 #container-right .form-group input {
   font-family: "Proxima", sans-serif;
-  padding: 1rem;
+  padding: 1rem 2rem;
   background: transparent;
   color: #ffffff;
   border: 1px solid #333;
@@ -154,17 +152,38 @@ a {
   transition: 0.3s ease-in-out;
 }
 
-#container-right .form-group :focus {
+#container-right .form-group input:focus {
   background: #25262b;
   outline: none;
   border: 1px solid #422f75;
 }
 
-#container-right .form-group input[type="text"],
+#container-right .form-group input[type="name"],
 #container-right .form-group input[type="email"],
 #container-right .form-group input[type="tel"],
 #container-right .form-group input[type="submit"] {
   width: 100%;
+}
+
+#container-right .form-group input[type="name"] {
+  background: url(/assets/images/at-sign.svg) no-repeat scroll 0.4375rem 0.4375rem/cover;
+  background-size: 1rem;
+  background-position-x: 10px;
+  background-position-y: 15px;
+}
+
+#container-right .form-group input[type="email"] {
+  background: url(/assets/images/mail.svg) no-repeat scroll 0.4375rem 0.4375rem/cover;
+  background-size: 1rem;
+  background-position-x: 10px;
+  background-position-y: 15px;
+}
+
+#container-right .form-group input[type="tel"] {
+  background: url(/assets/images/contact.svg) no-repeat scroll 0.4375rem 0.4375rem/cover;
+  background-size: 1rem;
+  background-position-x: 10px;
+  background-position-y: 15px;
 }
 
 #container-right .form-group input[type="submit"] {
@@ -175,11 +194,6 @@ a {
 
 #container-right .form-group input[type="submit"]:hover {
   background: #6d51b9;
-}
-
-#container-right .form-group .underline {
-  border: 1px solid #422f75;
-  margin: 0.5rem 2rem 1.5rem;
 }
 
 #container-right .form-group .socials {
