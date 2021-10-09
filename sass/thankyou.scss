@@ -1,0 +1,125 @@
+@import "mixins";
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+@font-face {
+  font-family: "Proxima";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Proxima"),
+    url("/assets/font/proxima_nova_light.otf") format("truetype");
+}
+
+a {
+  color: $light-color;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 1rem;
+  background: #111;
+  color: $light-color;
+  font-family: $font-stack-2;
+}
+
+.container {
+  border: 1px solid $light-color;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-rows: minmax(250px, auto);
+  padding: 2rem;
+
+  .container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+      color: $primary-color;
+    }
+
+    p {
+      font-family: $font-stack;
+    }
+  }
+
+  .container-right {
+    img {
+      width: 100%;
+    }
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    border: $border-style;
+    a {
+      color: $light-color;
+      font-size: 1.8rem;
+      text-decoration: none;
+      border-right: $border-style;
+      padding: 0.4rem 1rem;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &:hover {
+        background: $primary-color;
+      }
+
+      .align {
+        margin-top: 0.4rem;
+      }
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 800px) {
+  body {
+    height: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100%;
+    padding: 2rem;
+    text-align: center;
+
+    .container-left {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .container-right {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
