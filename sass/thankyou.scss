@@ -31,7 +31,7 @@ body {
   background: $dark-color;
   color: $light-color;
   font-family: $font-stack-2;
-  background: url(/assets/images/black.jpg) no-repeat center center/cover;
+  background: $dark-color url(/assets/images/black.jpg) no-repeat center center/cover;
 }
 
 .container {

@@ -27,7 +27,7 @@ body {
   background: #1d1e22;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  background: url(/assets/images/black.jpg) no-repeat center center/cover;
+  background: #1d1e22 url(/assets/images/black.jpg) no-repeat center center/cover;
 }
 
 .container {
