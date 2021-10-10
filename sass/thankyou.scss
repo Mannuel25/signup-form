@@ -28,22 +28,21 @@ body {
   height: 100vh;
   margin: 0 auto;
   max-width: 1000px;
-  padding: 1rem;
   background: $dark-color;
   color: $light-color;
   font-family: $font-stack-2;
+  background: url(/assets/images/black.jpg) no-repeat center center/cover;
 }
 
 .container {
+  background: rgba(0, 0, 0, 0.8);
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-auto-rows: minmax(250px, auto);
-  padding: 2rem;
 
   .container-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     padding: 1rem;
 
@@ -56,27 +55,50 @@ body {
 
     p {
       font-family: $font-stack;
+      max-width: 500px;
+      text-align: left;
+      font-size: 1rem;
     }
   }
 
   .container-right {
-    img {
-      width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      font-size: 3rem;
+
+      .icon {
+        background: #111;
+        border: $border-style;
+        padding: 0.3rem 0.5rem;
+        border-radius: 5px;
+
+        &:hover {
+          background: transparent;
+        }
+      }
     }
   }
 
   .socials {
     display: flex;
     align-items: center;
-    margin: 1rem;
+    margin: 1rem 0;
     a {
       color: $light-color;
       font-size: 1.8rem;
       text-decoration: none;
-      padding: 0.4rem 1rem;
+      padding: 0.1rem 0.5rem;
       border: $border-style;
       border-radius: 5px;
-      margin: 0 1rem;
+      margin-right: 1rem;
+
+      &:last-child {
+        margin: 0;
+      }
 
       &:hover {
         background: $primary-color;
@@ -95,18 +117,21 @@ body {
 
 // Responsive
 @media (max-width: 800px) {
-  body {
-    height: 100%;
-  }
+  //   body {
+  //     height: 100%;
+  //   }
 
   .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 100%;
     padding: 2rem;
+    margin: 0.4rem;
     text-align: center;
 
     .container-left {
+      align-items: center;
+
       h1 {
         font-size: 2rem;
       }
@@ -114,7 +139,7 @@ body {
 
     .container-right {
       img {
-        width: 100%;
+        //   width: 100%;
       }
     }
   }
