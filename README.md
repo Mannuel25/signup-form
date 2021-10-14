@@ -5,7 +5,7 @@
 
 Eke Hub is a learning community of Developers and Designers collaborating and building Open Source Solutions. 
 
-if you're interested in joining the community, kindly fill this [form](https://ekehub-signup.netlify.app/). Here are a few details you'll be required to input while filling the form:
+If you're interested in joining the community, kindly fill this [form](https://ekehub-signup.netlify.app/). Here are a few details you'll need to enter while filling out the form:
 - **Your GitHub Username** - Add your GitHub Username.
 - **GitHub Email ID** - Add the email ID associated with your GitHub account.
 - **Telephone Number (Optional)** - Add your telephone number (this is optional).
